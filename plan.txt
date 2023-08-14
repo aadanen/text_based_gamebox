@@ -1,9 +1,17 @@
 # Lets try really getting a good idea of the project from the start!
 
 # Current todo
-* follow the plan for main (important)
+
+__ FINISH HANGMAN __
 * input validation for guesses and for keyword
-* implement MAX_CHANCES
+* dont use magic number of 5, make a private int that is set during init
+
+__ MAKE THE GAMEBOX CLASS TUI __
+
+# All of the games should inherit a "game" interface that recquires them to have a play method
+# Should also recquire them to have like a get_name/get_title method
+# That way we can have the game box have like Game g = (user_input) and then g.play() 
+^ Dependency injection? ^
 
 # main
 depends on hangman.h and hangman.cpp

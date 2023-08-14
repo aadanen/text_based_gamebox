@@ -87,6 +87,11 @@ bool Hangman::bros_dead()
     return false;
 }
 
+std::string Hangman::get_title()
+{
+    return "Hangman";
+}
+
 std::string Hangman::display()
 {
     std::string result = keyword + '\n';

@@ -18,6 +18,7 @@ private:
     std::string display();
 public:
     void play();
+    std::string get_title();
 };
 
 #endif

@@ -1,12 +1,8 @@
-#include <iostream>
-#include <string>
-#include <hangman.h>
-#include <text_manipulator.h>
+#include <gamebox.h>
 
 int main()
 {
-    
-    Hangman h = Hangman();
-    h.play();
+    Gamebox g = Gamebox();
+    g.open();
     return 0;
 }
