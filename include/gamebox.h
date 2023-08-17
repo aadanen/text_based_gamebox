@@ -2,18 +2,22 @@
 #define GAMEBOX_H
 
 #include <hangman.h>
+#include <vector>
 // Do I need like an array of possible game choices?
 // How tf do I do that?
 class Gamebox
 {
 private:
     // Game[] games = {Hangman(), }
-    Hangman h = Hangman();
-    const static int NUM_GAMES = 1;
-    Hangman games[NUM_GAMES] = {h};
+    std::vector<Game*> games;
+    unsigned int selected_game;
+    void display_games();
+    void pick_game();
 public:
-    void open();
+    void start();
+    void add_game(Game* gptr);
     // void play(Game g) ??
 };
 
 #endif
+

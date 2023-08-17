@@ -9,28 +9,11 @@ __ FINISH HANGMAN __
 __ MAKE THE GAMEBOX CLASS TUI __
 
 # All of the games should inherit a "game" interface that recquires them to have a play method
-# Should also recquire them to have like a get_name/get_title method
+# Should also recquire them to have like a get_title method
 # That way we can have the game box have like Game g = (user_input) and then g.play() 
 ^ Dependency injection? ^
 
-# main
-depends on hangman.h and hangman.cpp
-gets the keyword from the user
-makes a hangman game and starts it
-returns 0 when control flows back to it
+# I wonder if theres a better way to list out the classes then by explicitly constructing each one before puttin them in a list
 
-# hangman
-need a hangman.h and hangman.cpp
-has init(std::string keyword, int max_chances)
-init also frees the char* and reinitilizes it, setting int incorrect_guesses to 0
-init also (re)sets the underscore string to "_" repeated keyword.length() times
-has a char* of incorrectly guessed letters, and a std::string "_____"
-the "_" get replaced with letters if they match the keyword in that position
-can display its state: prints out each incorrect letter
-
-if the players guesses end up replacing all the underscores then the guesser won
-if the num guesses > max_chances then the hangman won
-
-# MAKE A STRING MANIPULATOR CLASS
-repeat some char a number of times in a string
-find positions of all matches to an input
+# I wonder if theres a better way than the get_title method. If it just returns shouldn't I be able to have a public constant?
+# public static constant?

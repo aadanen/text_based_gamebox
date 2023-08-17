@@ -2,7 +2,10 @@
 
 int main()
 {
-    Gamebox g = Gamebox();
-    g.open();
+    Gamebox box = Gamebox();
+    Game* h = new Hangman();
+    box.add_game(h);
+    box.start();
+    delete h;
     return 0;
 }

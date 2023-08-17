@@ -99,3 +99,9 @@ std::string Hangman::display()
     result += incorrect_guesses + '\n';
     return result;
 }
+
+Hangman::~Hangman()
+{
+    std::cout << "Destructing hangman object\n";
+}
+
