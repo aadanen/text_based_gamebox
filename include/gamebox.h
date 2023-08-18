@@ -12,7 +12,7 @@ private:
     std::vector<Game*> games;
     unsigned int selected_game;
     void display_games();
-    void pick_game();
+    // void pick_game();
 public:
     void start();
     void add_game(Game* gptr);
