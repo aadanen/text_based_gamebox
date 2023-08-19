@@ -3,12 +3,14 @@
 #include <gamebox.h>
 #include <game.h>
 
+// Puts a given Game* into the games vector
 void Gamebox::add_game(Game* gptr)
 {
     games.push_back(gptr);
 }
 
 
+// Display each game in the games vector in format $POSITION. $TITLE
 void Gamebox::display_games()
 {
     for (int i = 0; i < (int) games.size(); i++)
@@ -17,6 +19,9 @@ void Gamebox::display_games()
     }
 
 }
+
+
+// This ones kinda broken sorry
 
 /*
 void Gamebox::pick_game()
@@ -37,6 +42,8 @@ void Gamebox::pick_game()
 }
 */
 
+
+// main driver code
 void Gamebox::start()
 {
     // Display all the games and let the user choose
