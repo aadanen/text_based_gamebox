@@ -2,6 +2,7 @@
 #define GAMEBOX_H
 
 #include <hangman.h>
+#include <tictactoe.h>
 #include <vector>
 // This keeps track of all the games that can be chosen
 // All games a referenced via a Game* in the games std::vector
@@ -14,7 +15,7 @@ private:
 
     void display_games(); // Show the user a list of all their options
                           
-    // void pick_game(); // Basically ask the user to pick a number from the list of games, and
+    void pick_game(); // Basically ask the user to pick a number from the list of games, and
                          // Set selected_game to their choice if its a valid one
                          
     // void choice_is_valid // I'm gonna want this one

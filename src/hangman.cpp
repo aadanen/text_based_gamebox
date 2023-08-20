@@ -106,8 +106,5 @@ std::string Hangman::display()
     return result;
 }
 
-Hangman::~Hangman()
-{
-    std::cout << "Destructing hangman object\n";
-}
+Hangman::~Hangman() {}
 
