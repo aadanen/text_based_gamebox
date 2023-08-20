@@ -1,6 +1,6 @@
 CC := g++
-CFLAGS := -Wall -Iinclude
-TARGET := hangman_game
+CFLAGS := -Wall -Iinclude -g
+TARGET := gamebox
 
 SRCDIR := src
 OBJDIR := objects

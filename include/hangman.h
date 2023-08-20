@@ -2,7 +2,8 @@
 #define HANGMAN_H
 
 #include <string>
-class Hangman
+#include <game.h>
+class Hangman : public Game
 {
 private:
     std::string keyword;
@@ -16,8 +17,11 @@ private:
     bool is_game_over();
     bool bros_dead();
     std::string display();
+    char get_ch();
 public:
-    void play();
+    ~Hangman();
+    virtual void play();
+    virtual std::string get_title();
 };
 
 #endif
