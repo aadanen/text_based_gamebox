@@ -24,9 +24,7 @@ void Hangman::play()
     {
         std::cout << display();
         std::cout << "Make a guess!" << std::endl;
-        char g;
-        g = std::cin.get();
-        std::cin.ignore();
+        char g = get_ch();
         guess(g);
         game_over = is_game_over();
     }
@@ -39,6 +37,14 @@ void Hangman::play()
     {
         std::cout << "You saved them! Nice! :)" << std::endl;
     }
+}
+
+
+char Hangman::get_ch()
+{
+    std::string str;
+    std::getline(std::cin, str);
+    return str[0];
 }
 
 // Takes a char and then compares it to keyword. Sorts into correct or incorrect

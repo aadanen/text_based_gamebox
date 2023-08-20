@@ -17,6 +17,7 @@ private:
     bool is_game_over();
     bool bros_dead();
     std::string display();
+    char get_ch();
 public:
     ~Hangman();
     virtual void play();
