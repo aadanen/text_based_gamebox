@@ -1,4 +1,6 @@
-Bug: If user enters multiple characters when trying to guess the hangman word, program crashes
-
-Bug: There was a segfault which resolved itself. Its not resolved, my program just has non-fatal undefined behavior
+<Bug>
+There was a segfault which resolved itself. Its not resolved, 
+my program just has non-fatal undefined behavior
+[resolved]
+Its been like months and it hasn't happened so something I did fixed it :)
 
